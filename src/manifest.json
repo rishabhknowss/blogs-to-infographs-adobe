@@ -1,0 +1,21 @@
+{
+    "testId": "0c79d35b-101c-4ceb-a632-ba74d2be5844",
+    "name": "Blogs To Infographs",
+    "version": "1.0.0",
+    "manifestVersion": 2,
+    "requirements": {
+        "apps": [
+            {
+                "name": "Express",
+                "apiVersion": 1
+            }
+        ]
+    },
+    "entryPoints": [
+        {
+            "type": "panel",
+            "id": "panel1",
+            "main": "index.html"
+        }
+    ]
+}

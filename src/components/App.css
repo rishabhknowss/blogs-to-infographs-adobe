@@ -1,0 +1,188 @@
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+.header p {
+  color: #666;
+  margin: 0;
+  font-size: 14px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.status-card {
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+}
+
+.preview-card {
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+}
+
+.preview-card h2 {
+  color: #495057;
+  font-weight: 600;
+}
+
+.control {
+  margin-bottom: 16px;
+}
+
+.control:last-child {
+  margin-bottom: 0;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.button-group > * {
+  flex: 1;
+  min-width: 120px;
+}
+
+.preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  background: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.preview-image {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.preview-title {
+  color: #666;
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.progress-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+}
+
+.progress-text {
+  color: #0066cc;
+  margin: 0;
+  font-weight: 500;
+}
+
+.error-section {
+  text-align: center;
+}
+
+.error-text {
+  color: #d73502;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+    max-width: 100%;
+  }
+
+  .main-content {
+    gap: 16px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-group > * {
+    flex: none;
+  }
+
+  .preview {
+    min-height: 150px;
+  }
+
+  .preview-image {
+    max-height: 250px;
+  }
+}
+
+/* Prevent horizontal scrolling */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Adobe Express specific styling */
+sp-theme {
+  height: 100vh;
+}
+
+sp-textfield,
+sp-textarea,
+sp-picker {
+  width: 100%;
+}
+
+sp-textarea {
+  min-height: 80px;
+}
+
+sp-progress-circle {
+  --spectrum-progresscircle-size: 24px;
+}
