@@ -43,8 +43,8 @@ const App: React.FC<AppProps> = ({ addOnUISdk }) => {
   const [progress, setProgress] = useState("")
 
   // Hardcoded API keys
-  const FAL_API_KEY = "fal-ai-key"
-  const OPENAI_API_KEY = "open-ai-key"
+  const FAL_API_KEY = ""
+  const OPENAI_API_KEY = ""
 
   const scrapeUrl = async (url: string): Promise<ScrapedContent> => {
     console.log("🔍 Starting URL scraping for:", url)
@@ -329,7 +329,7 @@ const App: React.FC<AppProps> = ({ addOnUISdk }) => {
         <div className="main-content">
           {/* URL Input Section */}
           <div className="card">
-            <h2>Blog URL (Optional)</h2>
+            <h2>Blog URL </h2>
             <div className="control">
               <FieldLabel>Enter blog post URL</FieldLabel>
               <Textfield
@@ -343,7 +343,7 @@ const App: React.FC<AppProps> = ({ addOnUISdk }) => {
 
           {/* Custom Instructions Section */}
           <div className="card">
-            <h2>Custom Instructions (Optional)</h2>
+            <h2>Custom Instructions</h2>
             <div className="control">
               <FieldLabel>Add specific requirements for your infographic</FieldLabel>
               <Textfield

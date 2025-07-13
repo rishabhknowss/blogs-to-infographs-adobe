@@ -1,6 +1,6 @@
-## About
+# Blogs to Infographs
 
-This project has been created with _@adobe/create-ccweb-add-on_. As an example, this Add-on demonstrates how to get started with Add-on development using React and TypeScript.
+turn blogs to infographs 
 
 ## Tools
 
@@ -8,6 +8,14 @@ This project has been created with _@adobe/create-ccweb-add-on_. As an example, 
 -   CSS
 -   React
 -   TypeScript
+-   Open AI
+
+## Set API keys 
+
+```
+  const FAL_API_KEY = ""
+  const OPENAI_API_KEY = ""
+```
 
 ## Setup
 
